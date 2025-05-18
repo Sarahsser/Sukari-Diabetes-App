@@ -2,21 +2,22 @@ from db_api.V1._connect_db import FlaskApp, db
 from flask_cors import CORS
 
 from db_api.V1.account import app as account_app
-from db_api.V1.location import app as location_app
-from db_api.V1.hospital import app as hospital_app
-from db_api.V1.user import app as user_app
+from db_api.V1.activity import app as activity_app
+from db_api.V1.additionnal_infos import app as additionnal_infos_app
+from db_api.V1.appointement import app as appointement_app
+from db_api.V1.articles import app as articles_app
+from db_api.V1.blood_sugar import app as blood_sugar_app
 from db_api.V1.community import app as community_app
+from db_api.V1.contact import app as contact_app
+from db_api.V1.hospital import app as hospital_app
+from db_api.V1.location import app as location_app
+from db_api.V1.meal import app as meal_app
+from db_api.V1.notification import app as notification_app
 from db_api.V1.perspection import app as perspection_app
 from db_api.V1.plan_and_challange import app as plan_and_challange_app
-from db_api.V1.activity import app as activity_app
-from db_api.V1.meal import app as meal_app
-from db_api.V1.blood_sugar import app as blood_sugar_app
-from db_api.V1.notification import app as notification_app
-from db_api.V1.articles import app as articles_app
-from db_api.V1.appointement import app as appointement_app
-from db_api.V1.contact import app as contact_app
-from db_api.V1.additionnal_infos import app as additionnal_infos_app
-
+from db_api.V1.user import app as user_app
+from login_api import login_bp
+from signup import signup_bp
 
 flask_app_instance = FlaskApp()# Get the first instance of the app
 app = flask_app_instance.app
@@ -52,22 +53,23 @@ def index():
 
 # Register Blueprints
 # Register the blueprints for the database API
-app.register_blueprint(account_app,  url_prefix='/db_api/api')
-app.register_blueprint(location_app,  url_prefix='/db_api/api')
-app.register_blueprint(hospital_app, url_prefix='/db_api/api')
-app.register_blueprint(user_app, url_prefix='/db_api/api')
-app.register_blueprint(community_app, url_prefix='/db_api/api')
-app.register_blueprint(perspection_app, url_prefix='/db_api/api')
-app.register_blueprint(plan_and_challange_app, url_prefix='/db_api/api')
-app.register_blueprint(activity_app, url_prefix='/db_api/api')
-app.register_blueprint(meal_app, url_prefix='/db_api/api')
-app.register_blueprint(blood_sugar_app, url_prefix='/db_api/api')
-app.register_blueprint(notification_app, url_prefix='/db_api/api')
-app.register_blueprint(articles_app, url_prefix='/db_api/api')
-app.register_blueprint(appointement_app, url_prefix='/db_api/api')
-app.register_blueprint(contact_app, url_prefix='/db_api/api')
-app.register_blueprint(additionnal_infos_app, url_prefix='/db_api/api')
-
+app.register_blueprint(account_app,  url_prefix='/db_api/V1')
+app.register_blueprint(location_app,  url_prefix='/db_api/V1')
+app.register_blueprint(hospital_app, url_prefix='/db_api/V1')
+app.register_blueprint(user_app, url_prefix='/db_api/V1')
+app.register_blueprint(community_app, url_prefix='/db_api/V1')
+app.register_blueprint(perspection_app, url_prefix='/db_api/V1')
+app.register_blueprint(plan_and_challange_app, url_prefix='/db_api/V1')
+app.register_blueprint(activity_app, url_prefix='/db_api/V1')
+app.register_blueprint(meal_app, url_prefix='/db_api/V1')
+app.register_blueprint(blood_sugar_app, url_prefix='/db_api/V1')
+app.register_blueprint(notification_app, url_prefix='/db_api/V1')
+app.register_blueprint(articles_app, url_prefix='/db_api/V1')
+app.register_blueprint(appointement_app, url_prefix='/db_api/V1')
+app.register_blueprint(contact_app, url_prefix='/db_api/V1')
+app.register_blueprint(additionnal_infos_app, url_prefix='/db_api/V1')
+app.register_blueprint(login_bp, url_prefix='/')
+app.register_blueprint(signup_bp, url_prefix='/')
 # Register the blueprints for the IA API
 # ...
 

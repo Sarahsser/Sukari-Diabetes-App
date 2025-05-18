@@ -228,7 +228,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     color: Colors.white)
                                 : const Text('Login',
                                     style: TextStyle(fontSize: 18)),
-                          ),
+                           ),
                           const SizedBox(height: 16),
                           Center(
                             child: Row(

@@ -67,13 +67,13 @@ class _DiabetesFormScreenState extends State<DiabetesFormScreen> {
             'None'
           ],
           answerKey: 'other_conditions',
-          multipleChoice: true,
+         
         ),
         Question(
           text: '3-Are you on diabetes medication?',
           options: ['Insulin', 'Oral medication', 'Both', 'None'],
           answerKey: 'medications',
-          multipleChoice: true,
+          
         ),
         Question(
           text: '4-Are you currently pregnant?',
@@ -123,7 +123,7 @@ class _DiabetesFormScreenState extends State<DiabetesFormScreen> {
             'All of the above'
           ],
           answerKey: 'goals',
-          multipleChoice: true,
+          
         ),
         Question(
           text: '2-How often would you like to receive health reminders?',

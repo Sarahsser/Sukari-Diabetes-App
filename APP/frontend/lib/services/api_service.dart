@@ -6,10 +6,10 @@ import '../models/activity_model.dart';
 import '../models/meal_model.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.1.34:5000/api';
+  static const String baseUrl = 'http://192.168.100.53:5000';
 
   static Future<List<BloodSugarReading>> fetchBloodSugar() async {
-    final response = await http.get(Uri.parse('$baseUrl/blood_sugar'));
+    final response = await http.get(Uri.parse('$baseUrl/db_api/V1/blood_sugar'));
     if (response.statusCode == 200) {
       List<dynamic> body = jsonDecode(response.body);
       return body.map((item) => BloodSugarReading.fromJson(item)).toList();
@@ -19,7 +19,7 @@ class ApiService {
   }
 
   static Future<List<Medication>> fetchMedications() async {
-    final response = await http.get(Uri.parse('$baseUrl/medications'));
+    final response = await http.get(Uri.parse('$baseUrl/db_api/V1/medications'));
     if (response.statusCode == 200) {
       List<dynamic> body = jsonDecode(response.body);
       return body.map((item) => Medication.fromJson(item)).toList();
@@ -29,7 +29,7 @@ class ApiService {
   }
 
   static Future<List<ActivityLog>> fetchActivities() async {
-    final response = await http.get(Uri.parse('$baseUrl/activities'));
+    final response = await http.get(Uri.parse('$baseUrl/db_api/V1/activities'));
     if (response.statusCode == 200) {
       List<dynamic> body = jsonDecode(response.body);
       return body.map((item) => ActivityLog.fromJson(item)).toList();
@@ -39,7 +39,7 @@ class ApiService {
   }
 
   static Future<List<MealLog>> fetchMeals() async {
-    final response = await http.get(Uri.parse('$baseUrl/meals'));
+    final response = await http.get(Uri.parse('$baseUrl/db_api/V1/meals'));
     if (response.statusCode == 200) {
       List<dynamic> body = jsonDecode(response.body);
       return body.map((item) => MealLog.fromJson(item)).toList();
@@ -49,7 +49,7 @@ class ApiService {
   }
 
   static Future<List<MealRecipe>> fetchRecipes() async {
-    final response = await http.get(Uri.parse('$baseUrl/recipes'));
+    final response = await http.get(Uri.parse('$baseUrl/db_api/V1/recipes'));
     if (response.statusCode == 200) {
       List<dynamic> body = jsonDecode(response.body);
       return body.map((item) => MealRecipe.fromJson(item)).toList();
@@ -59,7 +59,7 @@ class ApiService {
   }
 
   static Future<Map<String, dynamic>> fetchPatientDetails() async {
-    final response = await http.get(Uri.parse('$baseUrl/patient_details'));
+    final response = await http.get(Uri.parse('$baseUrl/db_api/V1/patient_details'));
     if (response.statusCode == 200) {
       return jsonDecode(response.body);
     } else {
@@ -69,7 +69,7 @@ class ApiService {
 
   static Future<void> logBloodSugar(double value, String readingType) async {
     final response = await http.post(
-      Uri.parse('$baseUrl/blood_sugar'),
+      Uri.parse('$baseUrl/db_api/V1/blood_sugar'),
       body: jsonEncode({
         'value': value,
         'reading_type': readingType,
@@ -87,7 +87,7 @@ class ApiService {
     int? steps,
   ) async {
     final response = await http.post(
-      Uri.parse('$baseUrl/activities'),
+      Uri.parse('$baseUrl/db_api/V1/activities'),
       body: jsonEncode({
         'activity_type': activityType,
         'duration_minutes': durationMinutes,
@@ -107,7 +107,7 @@ class ApiService {
     int carbs,
   ) async {
     final response = await http.post(
-      Uri.parse('$baseUrl/meals'),
+      Uri.parse('$baseUrl/db_api/V1/meals'),
       body: jsonEncode({
         'meal_type': mealType,
         'name': name,
@@ -127,7 +127,7 @@ class ApiService {
     String time,
   ) async {
     final response = await http.post(
-      Uri.parse('$baseUrl/medications'),
+      Uri.parse('$baseUrl/db_api/V1/medications'),
       body: jsonEncode({
         'medication_name': name,
         'dosage': dosage,

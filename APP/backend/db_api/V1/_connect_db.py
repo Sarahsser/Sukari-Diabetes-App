@@ -21,7 +21,7 @@ class FlaskApp:
         app = Flask(__name__)
 
         # MySQL configuration
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost:3306/app_db'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost:3306/diabetes_management_app'
         app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
         return app

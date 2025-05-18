@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:sugarblood/models/blood_sugar_model.dart';
 import 'package:sugarblood/pages/healthSammary.dart';
-import 'package:sugarblood/pages/healthSammary.dart';
+import 'package:sugarblood/pages/doctor_listing_page.dart';
 import 'package:sugarblood/services/api_service.dart';
+import 'package:sugarblood/pages/community_and_chat_page.dart';
 
 class DiabetesDashboardPage extends StatefulWidget {
   const DiabetesDashboardPage({Key? key}) : super(key: key);
@@ -83,7 +84,8 @@ class _DiabetesDashboardPageState extends State<DiabetesDashboardPage> {
                   _buildNavItem('assets/stethoscope.png', false,
                       const DoctorListingPage()),
                   _buildNavItem(
-                      'assets/people.png', false, const CommunityAndChatPage()),
+                      'assets/people.png', false, const CommunityAndChatPage()
+                     ),
                 ],
               ),
             ),
@@ -820,26 +822,3 @@ class _DiabetesDashboardPageState extends State<DiabetesDashboardPage> {
   }
 }
 
-class CommunityAndChatPage extends StatelessWidget {
-  const CommunityAndChatPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Community')),
-      body: const Center(child: Text('Community Page')),
-    );
-  }
-}
-
-class DoctorListingPage extends StatelessWidget {
-  const DoctorListingPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Doctors')),
-      body: const Center(child: Text('Doctors Page')),
-    );
-  }
-}

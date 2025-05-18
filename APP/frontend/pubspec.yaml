@@ -10,21 +10,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  open_file: ^3.3.1
-  font_awesome_flutter: ^10.5.0
+  open_filex: ^4.7.0
+  font_awesome_flutter: ^10.8.0
   cupertino_icons: ^1.0.8
-  url_launcher: ^6.1.11
+  url_launcher: ^6.3.0
   intl: ^0.20.2
-  google_sign_in: ^6.1.5
+  google_sign_in: ^6.2.1
   sign_in_with_apple: ^7.0.1
-  google_fonts: ^6.1.0
+  google_fonts: ^6.2.1
   intl_phone_field: ^3.2.0
   http: ^1.3.0
-  file_picker: ^10.1.2
-  path_provider: ^2.0.15
-  syncfusion_flutter_charts: 29.1.40
-  flutter_pdfview: ^1.2.2
-  open_filex: 4.7.0
+  file_picker:
+    path: C:/Users/LENOVO/flutter_file_picker
+  path_provider: ^2.1.5
+  syncfusion_flutter_charts: ^29.1.40
+  flutter_pdfview: ^1.3.2
   syncfusion_flutter_pdfviewer: ^29.1.40
   youtube_player_flutter: ^9.1.1
   fl_chart: ^0.71.0
@@ -43,6 +43,47 @@ flutter:
   assets:
     - assets/diabetes_illustration.png
     - assets/doctor_team.png
+    - assets/activity.png
+    - assets/apple 1.png
+    - assets/calories 1.png
+    - assets/clock 1.png
+    - assets/community.png
+    - assets/compass.png
+    - assets/diabetes_illustration.png
+    - assets/doctor_team.png
+    - assets/dumbbell 1.png
+    - assets/explore.png
+    - assets/food.png
+    - assets/Frame 26.png
+    - assets/Group 28.png
+    - assets/home.png
+    - assets/hydration.png
+    - assets/icon.png
+    - assets/image (4).png
+    - assets/image (6).png
+    - assets/image (7).png
+    - assets/image (8).png
+    - assets/image (13).png
+    - assets/image (14).png
+    - assets/image (17).png
+    - assets/medication.png
+    - assets/medicine (2) 1.png
+    - assets/mental-health 1.png
+    - assets/mineral-water 1.png
+    - assets/motherhood 1.png
+    - assets/people.png
+    - assets/plat_1.jpg
+    - assets/plat_2.jpg
+    - assets/plat_3.jpg
+    - assets/plat_4.jpg
+    - assets/plat_5.jpg
+    - assets/plat_6.jpg
+    - assets/research 1.png
+    - assets/running-shoe 1.png
+    - assets/sleep.png
+    - assets/sneaker 1.png
+    - assets/stethoscope (1).png
+    - assets/stethoscope.png
 
 flutter_launcher_icons:
   android: true
