@@ -10,6 +10,7 @@ DROP TABLE IF EXISTS accounts;
 CREATE TABLE accounts (
     account_id INT AUTO_INCREMENT PRIMARY KEY,
     user_name VARCHAR(255) NOT NULL UNIQUE,
+    full_name VARCHAR(255) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL UNIQUE,
     phone_number VARCHAR(20),
     password VARCHAR(255) NOT NULL,

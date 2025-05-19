@@ -7,7 +7,7 @@ def connect_db():
         host="localhost",          # Change if needed
         user="root",               # Change if needed
         password="",               # Change if needed
-        database="diabetes_management_app"
+        database="app_db"
     )
 
 

@@ -23,7 +23,7 @@ def get_db_connection():
             host="localhost",
             user="root",
             password="",
-            database="diabetes_management_app"
+            database="app_db"
         )
         return connection
     except Error as e:

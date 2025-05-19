@@ -14,7 +14,7 @@ def connect_db():
         host="localhost",
         user="root",
         password="",
-        database="diabetes_management_app"
+        database="app_db"
     )
 
 @login_bp.route("/login", methods=["POST"])

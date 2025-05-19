@@ -16,7 +16,7 @@ def connect_db():
         host="localhost",
         user="root",
         password="",
-        database="diabetes_management_app"
+        database="app_db"
     )
 
 def allowed_file(filename):
@@ -115,14 +115,14 @@ def complete_doctor_profile():
 
         # Update database
         cursor.execute("""
-            UPDATE users 
+            UPDATE accounts 
             SET phone_number = %s
-            WHERE id_account = %s
+            WHERE account_id = %s
         """, (data["phone_number"], user_id))
 
         cursor.execute("""
             UPDATE doctors 
-            SET specialization = %s, license_number = %s, 
+            SET speciality = %s, professional_id = %s, 
                 experience_years = %s, hospital_clinic_name = %s,
                 country = %s, city = %s,
                 document_path = %s, verified = FALSE
