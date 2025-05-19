@@ -173,20 +173,20 @@ def complete_patient_profile():
         cursor = db.cursor()
 
         cursor.execute("""
-            UPDATE users 
-            SET gender = %s, date_of_birth = %s, phone_number = %s
+            UPDATE patients 
+            SET sex = %s, date_birth = %s, public_phone_number = %s
             WHERE id_account = %s
         """, (
-            data["gender"],
-            datetime.strptime(data["date_of_birth"], "%d/%m/%Y").date(),
-            data["phone_number"],
+            data["sex"],
+            datetime.strptime(data["date_birth"], "%d/%m/%Y").date(),
+            data["public_phone_number"],
             user_id
         ))
 
         cursor.execute("""
             UPDATE patients 
             SET diabetes_type = %s, height = %s, weight = %s,
-                emergency_contact_name = %s, emergency_contact_phone = %s,
+                
                 allergies = %s, other_conditions = %s, medications = %s,
                 pregnancy_status = %s, sugar_intake = %s, diet_type = %s,
                 exercise_frequency = %s, smoking = %s, alcohol = %s,

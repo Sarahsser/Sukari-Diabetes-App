@@ -172,8 +172,9 @@ class _DiabetesMedicationPageState extends State<DiabetesMedicationPage> {
   }
 
   Widget _buildActionRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  return SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+    child: Row(
       children: [
         _buildActionButton(
           'Log Blood Sugar',
@@ -181,21 +182,26 @@ class _DiabetesMedicationPageState extends State<DiabetesMedicationPage> {
           Colors.blue,
           () => _showBloodSugarDialog(),
         ),
+        SizedBox(width: 12), // spacing between buttons
         _buildActionButton(
           'Log Activity',
           Icons.directions_run,
           Colors.green,
           () => _showActivityDialog(),
         ),
+        SizedBox(width: 12),
         _buildActionButton(
           'Log Meal',
           Icons.restaurant,
           Colors.orange,
           () => _showMealDialog(),
         ),
+        // Add more buttons if needed
       ],
-    );
-  }
+    ),
+  );
+}
+
 
   Widget _buildActionButton(
       String text, IconData icon, Color color, VoidCallback onPressed) {

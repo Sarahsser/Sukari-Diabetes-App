@@ -309,14 +309,9 @@ class _DiabetesFormScreenState extends State<DiabetesFormScreen> {
                   const SizedBox(height: 40),
                   ElevatedButton(
                     onPressed: _isFormComplete()
-                        ? () {
-                            print(_userAnswers);
-                            ScaffoldMessenger.of(context)
-                                .showSnackBar(const SnackBar(
-                              content: Text('Form submitted successfully!'),
-                            ));
-                          }
-                        : null,
+                      ? _submitForm
+                    : null,
+
                     style: ElevatedButton.styleFrom(
                       backgroundColor: _isFormComplete()
                           ? AppColors.primary

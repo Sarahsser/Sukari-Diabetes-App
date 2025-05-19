@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserService {
-  static const String baseUrl = 'http://192.168.100.53:5000';
+  static const String baseUrl = 'http://192.168.234.251:5000';
 
   // Shared Preferences Keys
   static const String _rememberMeKey = 'remember_me';
