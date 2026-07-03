@@ -6,14 +6,6 @@ A cross-platform mobile application built with **Flutter + Flask + MySQL** that 
 
 **End-of-studies project — M'hamed Bougara University, Boumerdés | Academic Year 2024-2025**
 
----
-
-## 🎬 Demo
-
-[![Sukari App Presentation](https://img.youtube.com/vi/6Z6zDW6rgns/maxresdefault.jpg)](https://youtu.be/6Z6zDW6rgns)
-
-
-> 📄 [Read the full PFE report](./projet#101_developpement_d'une_application_mobile_pour_le_suivi_quotidien_du_diabete.pdf)
 
 ---
 
@@ -199,9 +191,17 @@ After the DB is set up, register as a **Patient** or **Doctor** directly from th
 
 ---
 
+## 🎬 Demo
+
+[![Sukari App Presentation](https://img.youtube.com/vi/6Z6zDW6rgns/maxresdefault.jpg)](https://youtu.be/6Z6zDW6rgns)
+
+
+---
+
 ## 📄 Report
 
-The full PFE dissertation is available in this repository: [rapport_pfe.pdf](./rapport_pfe.pdf)
+The full PFE dissertation is available in this repository:
+> 📄 [Read the full PFE report](./projet#101_developpement_d'une_application_mobile_pour_le_suivi_quotidien_du_diabete.pdf))
 
 ---
 
