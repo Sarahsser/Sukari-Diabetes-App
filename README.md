@@ -10,9 +10,10 @@ A cross-platform mobile application built with **Flutter + Flask + MySQL** that 
 
 ## 🎬 Demo
 
-[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Sukari App Presentation](https://img.youtube.com/vi/6Z6zDW6rgns/maxresdefault.jpg)](https://youtu.be/6Z6zDW6rgns)
 
-> 📄 [Read the full PFE report](./rapport_pfe.pdf)
+
+> 📄 [Read the full PFE report](./projet#101_developpement_d'une_application_mobile_pour_le_suivi_quotidien_du_diabete.pdf)
 
 ---
 
