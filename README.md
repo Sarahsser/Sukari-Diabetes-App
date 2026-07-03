@@ -8,14 +8,6 @@ A cross-platform mobile application built with **Flutter + Flask + MySQL** that 
 
 ---
 
-## 🎬 Demo
-
-[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
-> 📄 [Read the full PFE report](./rapport_pfe.pdf)
-
----
-
 ## ✨ Features
 
 ### 👤 Patient Interface
@@ -198,9 +190,17 @@ After the DB is set up, register as a **Patient** or **Doctor** directly from th
 
 ---
 
+
+## 🎬 Demo
+
+[![Sukari App Presentation](https://img.youtube.com/vi/6Z6zDW6rgns/maxresdefault.jpg)](https://youtu.be/6Z6zDW6rgns)
+
+---
+
 ## 📄 Report
 
-The full PFE dissertation is available in this repository: [rapport_pfe.pdf](./rapport_pfe.pdf)
+The full PFE dissertation is available in this repository: 
+> 📄 [Read the full PFE report](./Rapport_Projet_Sukari.pdf)
 
 ---
 
