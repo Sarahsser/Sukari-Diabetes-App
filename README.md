@@ -192,7 +192,7 @@ After the DB is set up, register as a **Patient** or **Doctor** directly from th
 
 ## 🎬 Demo
 
-[![Sukari App Presentation](https://img.youtube.com/vi/6Z6zDW6rgns/maxresdefault.jpg)](https://youtu.be/6Z6zDW6rgns))
+[![Sukari App Presentation](https://img.youtube.com/vi/6Z6zDW6rgns/maxresdefault.jpg)](https://youtu.be/6Z6zDW6rgns)
 
 
 ---
