@@ -1,0 +1,80 @@
+# ===========================
+# FLUTTER / DART
+# ===========================
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/pubspec.lock
+**/*.g.dart
+**/*.freezed.dart
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/*.jks
+**/android/app/google-services.json
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ===========================
+# PYTHON / FLASK BACKEND
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env/
+ENV/
+
+# Flask secrets - NEVER commit
+backend/.env
+.env
+
+# ===========================
+# DATABASE
+# ===========================
+# Never commit DB dumps with real data
+*.sql.bak
+*.dump
+
+# ===========================
+# OS FILES
+# ===========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===========================
+# IDE
+# ===========================
+.vscode/
+.idea/
+*.iml
+
+# ===========================
+# LOGS
+# ===========================
+*.log
+logs/
