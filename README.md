@@ -201,7 +201,7 @@ After the DB is set up, register as a **Patient** or **Doctor** directly from th
 ## 📄 Report
 
 The full PFE dissertation is available in this repository:
-> 📄 [Read the full PFE report](./projet#101_developpement_d'une_application_mobile_pour_le_suivi_quotidien_du_diabete.pdf))
+> 📄 [Read the full PFE report](./Rapport_Projet_Sukari.pdf)
 
 ---
 
